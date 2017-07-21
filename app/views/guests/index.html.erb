@@ -1,1 +1,7 @@
-<h1> Hasta la vista </h1>
+
+<% @guests.each do |guest| %>
+	<div>
+		<h4><%= guest.name %></h4>
+		<h5><%= guest.email %></h5><br />
+	</div>
+<% end %>
